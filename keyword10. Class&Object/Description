@@ -1,0 +1,20 @@
+1. C++에서 structure는 class의 일종임
+class와 구조체의 차이?
+class는 정의 과정에서 각각의 변수 및 함수의 접근 허용범위를 별도로 선언해야 한다.
+
+접근제어 지시자
+private : 해당 class 내에서만 접근 허용
+public : 어디에서나 접근 허용
+protected : 상속관계에서 접근 허용
+
+2. 
+keyword struct를 이용해 정의한 구조체에 선언된 변수와 함수에 별도의 접근제어 지시자를 선언하지 않으면 모든 변수와 함수는 public
+keyword class를 이용해 정의한 클래스에 선언된 변수와 함수에 별도의 접근제어 지시자를 선언하지 않으면 모든 변수와 함수는 private
+이 둘이 유일한 차이점임
+
+:: 은 레이블임
+
+3. Message Passing
+독립된 클래스 간에 메세지를 전달하는 방법은 함수 호출을 기반으로 하며, 이러한 함수호출을 가리켜 Message Passing이라 한다.
+예제 : FruitSaleSim1.cpp
+

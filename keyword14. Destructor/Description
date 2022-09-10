@@ -1,0 +1,8 @@
+ 1. Destructor 
+    객체 소멸 시 반드시 호출 된다.
+    소멸자는 클래스 이름 앞에 '~'가 붙는 형태이다.
+    대체로 생성자에서 할당한 resource를 release하는 데에 사용됨
+
+    1) 반환형 X, 실제로 반환 하지 않음
+    2) 매개변수는 무조건 void로 overloading 불가, default value 설정 불가
+    3) Destructor 정의가 없으면 Default Destructor가 자동으로 삽입 됨

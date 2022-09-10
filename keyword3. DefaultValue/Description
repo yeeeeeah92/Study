@@ -1,0 +1,19 @@
+Default Value란 매개변수에 value가 전달 되지 않았을 떄 Default로 갖게 될 Value를 의미한다.
+매개변수에 Default Value가 설정 되어 있으면, 선언된 매개변수의 수보다 적은 수의 인자 전달이 가능하며, 전달되는 인자는 왼쪽에서 부터 채워져 나가고 부족분은 Default Value로 채워진다.
+Default Value는 함수의 선언 부분에만 위치해야 한다. (정의부에 위치 시 Error)
+
+주의)
+Default Value 지정은 매개변수의 오른쪽 부터 채워야 한다.
+왜냐하면 함수 호출 시 매개변수는 왼쪽부터 채워지기 때문이다.
+따라서, Default Value가 없는 왼쪽 매개변수들의 값은 무조건 맞춰서 넣어주어야 하고 Default Value가 있는 오른쪽 매개변수들은 값을 주지 않아도 무관하다.
+
+ex. 
+int func(int num1, int num2, int num3 = 30)
+int func(int num1, int num2 = 20, int num3 = 30)
+int func(int num1 = 10, int num2 = 20, int num3 = 30)
+위 3가지 모두 정상
+
+int func(int num1 = 10, int num2 = 20, int num3)
+int func(int num1 = 10, int num2, int num3)
+위 2가지 모두 비정상
+

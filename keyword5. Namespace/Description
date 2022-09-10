@@ -1,0 +1,2 @@
+Code Merge 시 동일한 함수 명으로 충돌이 발생 하였을 때 이를 방지하기 위해 해당 Function들을 Namespace 안에 정의 하여 분리할 수 있다.
+여기서 '::' 연산자를 가리켜 '범위지정 연산자 (scope resolution operator)' 라고 한다.

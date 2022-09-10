@@ -1,0 +1,12 @@
+1. new
+ malloc을 대신하는 keyword로 보다 간결함
+ ex) char * str = (char*)malloc(sizeof(char) * 10) --> char * str = new char[10];
+
+ malloc과의 차이점은 new를 사용하면 객체 생성 시 Constructor가 호출 되지만 malloc 사용 시 호출 되지 않는다.
+ 
+
+2. delete
+ free를 대신하는 keyword로
+ ex) free(str) --> delete []str
+
+C++에서는 malloc과 free 대신에 new, delete를 사용하며 malloc, free 사용 시 문제가 될 수 있다.
