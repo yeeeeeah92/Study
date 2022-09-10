@@ -1,0 +1,19 @@
+ 1. 연산자 오버로딩
+    객체를 가지고 사칙연산이 가능해지도록 정의된 rule
+    'pos1+pos2' == 'pos1.operator+(pos2)'
+
+ 2. 멤버함수에 의한 연산자 오버로딩
+    pos1.operator+(pos2)
+
+
+ 3. 전역함수에 의한 연산자 오버로딩
+    operator+(pos1, pos2)
+    멤버함수에 의한 오버로딩이 전역함수에 의한 오버로딩보다 우선시되어 호출됨
+
+ 4. 단항연산자의 오버로딩
+    ++pos는 전역함수로는 operator++(pos), 멤버함수로는 pos.operator++();
+    1) 전위연산
+        ++pos == pos.operator++()
+    2) 후위연산
+        pos++ == pos.operator++(int)
+        괄호 안 int는 데이터 형과 전혀 관계 없으며, 단순히 후위연산을 위한 keyword로 사용된다.
